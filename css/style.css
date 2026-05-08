@@ -8,30 +8,66 @@
     margin: 0;
 }
 
+/*Google Fonts*/
+.titulo {
+  font-family: "Cinzel", serif;
+  font-optical-sizing: auto;
+  font-weight: 1rem;
+  font-style: normal;
+  color: aliceblue;
+}
+
 body{
     margin: 0;
     padding: 0;
 }
 
+
 header{
-    background: rgba(55, 67, 233, 0.575);
+    background-color: rgb(41, 93, 136);
 }
 header h1{
     padding: 1em;
     text-align: center;
+    margin: 0;
 }
 
+nav{
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+}
 nav ul{
     margin: 0;
     padding: 0;
 }
-
 nav li{
     display: inline-block;
 }
+nav a{
+    display: block;
+    padding: 1rem;
+    background-color: steelblue;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+
+a:hover {
+    background-color: darkblue;
+}
+
+a:active {
+    background-color: rgb(31, 25, 66);
+}
+
 
 main {
     padding: 2em;
     background: white;
+}
+
+footer{
+    background-color: rgb(41, 93, 136);
+    padding: 1rem;
 }
 
