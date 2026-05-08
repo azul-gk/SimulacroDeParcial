@@ -4,34 +4,39 @@
 
 #contenedor{
     width: 100%;
-    max-width: 1400px;
-    margin: 0;
+    max-width: 960px;
+    margin: 0 auto;
 }
 
 /*Google Fonts*/
 .titulo {
   font-family: "Cinzel", serif;
   font-optical-sizing: auto;
-  font-weight: 1rem;
+  font-weight: 600;
   font-style: normal;
-  color: aliceblue;
 }
+/*Aca también use la IA: me equivoque en el font weight usando la unidad de medida rem 
+(15	.title	Invalid property: font-weight 1remis not a value of font-weight: 1rem)*/
 
 body{
     margin: 0;
     padding: 0;
+
+  background-image: url("../img/fondo.png");
 }
 
-
+/*Estilos de la cabecera y el titulo :)*/
 header{
-    background-color: rgb(41, 93, 136);
+    background-color: rgb(13, 38, 58);
 }
 header h1{
     padding: 1em;
     text-align: center;
     margin: 0;
+    color: aliceblue;
 }
 
+/*estilos del navegador*/
 nav{
     padding-left: 1rem;
     padding-bottom: 1rem;
@@ -52,22 +57,79 @@ nav a{
     text-align: center;
 }
 
-a:hover {
+/*Cambio de colorsitos en el nav por interactividad del mouse*/
+nav a:hover {
     background-color: darkblue;
 }
 
-a:active {
-    background-color: rgb(31, 25, 66);
+nav a:active {
+    background-color: rgb(8, 6, 19);
 }
+
+
+/*Para el link de contacto*/
+a:link {
+    color: rgb(204, 190, 252);
+}
+
+a:visited{
+    color: rgb(5, 5, 20);
+}
+
+a:hover {
+    background-color: rgb(50, 50, 160);
+}
+
+a:active {
+    background-color: rgb(30, 9, 148);
+}
+
+
 
 
 main {
-    padding: 2em;
-    background: white;
+    padding: 4em;
+    background-color: rgb(179, 212, 243);
 }
+
 
 footer{
     background-color: rgb(41, 93, 136);
     padding: 1rem;
 }
 
+
+address{
+    color: aliceblue;
+}
+
+
+article{
+    text-align: center;
+    margin: 2rem;
+}
+
+
+/*Centra la imagen y la limita al contenedor padre (la expo celeste)*/
+.imgCentro{
+    display: block;
+    max-width: 100%;
+    margin: auto;
+}
+
+/*queria hacer que el texto ocupe un 50% y la imagen el otro 50% asi quedan uno al lado del otro pero no funciono
+
+.pCostado{
+    width: 50%;
+    padding: 1rem;
+}
+
+.imgCostado{
+    width: 50%;
+    padding: 1rem;}
+
+*/
+
+.margenDiv{
+    margin-bottom: 4rem;
+}
